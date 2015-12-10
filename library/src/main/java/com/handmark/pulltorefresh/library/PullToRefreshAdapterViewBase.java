@@ -413,7 +413,7 @@ public abstract class PullToRefreshAdapterViewBase<T extends AbsListView> extend
 		return mShowIndicator && isPullToRefreshEnabled();
 	}
 
-	private boolean isFirstItemVisible() {
+	protected boolean isFirstItemVisible() {
 		final Adapter adapter = mRefreshableView.getAdapter();
 
 		if (null == adapter || adapter.isEmpty()) {
